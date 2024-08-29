@@ -1,0 +1,41 @@
+﻿@model Testimonial
+@{
+    ViewData["Title"] = "UpdateTestimonial";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Sosyal Medya</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title">Ssoyal Medya Ekleme Sayfası</div>
+					</div>
+					<div class="card-body">
+						<form method="post">
+							<input type="hidden" asp-for="TestimonialId"  />
+							<label>İsim-Soyisim</label>
+							<input type="text" asp-for="NameSurname" class="form-control" />
+							<br />
+							<label>Başlık</label>
+							<input type="text" asp-for="Title" class="form-control" />
+							<br />
+							<label>Açıklma</label>
+							<input type="text" asp-for="Description" class="form-control" />
+							<br />
+							<label>URL</label>
+							<input type="text" asp-for="ImageUrl" class="form-control" />
+							<br />
+
+
+							<button class="btn btn-primary">Refarans Ekle</button>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
